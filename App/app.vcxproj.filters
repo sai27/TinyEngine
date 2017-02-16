@@ -7,9 +7,6 @@
     <ClCompile Include="TinyEngineApp.cpp">
       <Filter>App</Filter>
     </ClCompile>
-    <ClCompile Include="TinyEngine.cpp">
-      <Filter>Engine</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
@@ -17,9 +14,6 @@
   <ItemGroup>
     <ClInclude Include="TinyEngineApp.h">
       <Filter>App</Filter>
-    </ClInclude>
-    <ClInclude Include="TinyEngine.h">
-      <Filter>Engine</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
@@ -37,9 +31,6 @@
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{dbcb801e-89d6-495c-ad62-943a43e6fa62}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Engine">
-      <UniqueIdentifier>{ee973bef-93b1-44fc-8e44-12b142e3409a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

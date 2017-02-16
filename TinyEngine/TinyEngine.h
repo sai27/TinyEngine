@@ -13,15 +13,15 @@ __TE_SPACE_BEGIN__
 class TinyEngine
 {
 public:
-	TinyEngine();
-	~TinyEngine();
+	TE_EXPORT TinyEngine();
+	TE_EXPORT ~TinyEngine();
 
 public:
-	bool Initilize(HWND hWnd);
-	void Destroy();
+	TE_EXPORT bool Initilize(HWND hWnd);
+	TE_EXPORT void Destroy();
 
-	void Update(float _dt);
-	void Render();
+	TE_EXPORT void Update(float _dt);
+	TE_EXPORT void Render();
 
 private:
 	HWND                    m_hWnd;

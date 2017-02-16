@@ -3,7 +3,8 @@
 // are changed infrequently
 //
 
-#pragma once
+#ifndef __STDAFX_H__
+#define __STDAFX_H__
 
 #include "targetver.h"
 
@@ -23,10 +24,11 @@
 #include <atlstr.h>
 
 // TODO: reference additional headers your program requires here
+#include "engine_inc.h"
 
-#include <d3d11.h>
-#include <directxcolors.h>
-#include "cmn_inc.h"
-#include "TinyEngine.h"
+#pragma comment(lib,"d3d11.lib")
+#pragma comment(lib,"d3dcompiler.lib")
+#pragma comment(lib,"tiny_common.lib")
+#pragma comment(lib,"tiny_engine.lib")
 
-#pragma comment(lib,"tiny_common.lib") 
+#endif
