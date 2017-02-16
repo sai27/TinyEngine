@@ -173,3 +173,14 @@ bool TinyEngineApp::Update()
 	m_pTinyEngine->Render();
 	return true;
 }
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
+{
+	TinyEngineApp app;
+	if (app.Init(hInstance))
+	{
+		app.Run();
+		app.Destroy();
+	}
+	return 0;
+}
