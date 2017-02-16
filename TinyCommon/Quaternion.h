@@ -5,8 +5,8 @@
 // Description:
 // *********************************************************************
 
-#ifndef __VECTOR2_H__
-#define __VECTOR2_H__
+#ifndef __QUATERNION_H__
+#define __QUATERNION_H__
 
 __TE_SPACE_BEGIN__
 

@@ -26,7 +26,7 @@
 
 #include <d3d11.h>
 #include <directxcolors.h>
-#include "common.h"
+#include "cmn_inc.h"
 #include "TinyEngine.h"
 
-#pragma comment(lib,"TinyCommon.lib") 
+#pragma comment(lib,"tiny_common.lib") 

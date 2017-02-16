@@ -19,9 +19,6 @@
     <ClInclude Include="defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="common.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Vector3.h">
       <Filter>math</Filter>
     </ClInclude>
@@ -41,6 +38,10 @@
       <Filter>math</Filter>
     </ClInclude>
     <ClInclude Include="defines_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cmn_inc.h" />
+    <ClInclude Include="declare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

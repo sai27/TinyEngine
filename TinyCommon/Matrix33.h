@@ -5,8 +5,8 @@
 // Description:
 // *********************************************************************
 
-#ifndef __VECTOR2_H__
-#define __VECTOR2_H__
+#ifndef __MATRIX33_H__
+#define __MATRIX33_H__
 
 __TE_SPACE_BEGIN__
 

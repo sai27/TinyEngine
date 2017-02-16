@@ -6,11 +6,10 @@
 // *********************************************************************
 
 #include "stdafx.h"
-#include "TinyEngine.h"
 #include "TinyEngineApp.h"
-#include "Vector2.h"
 
 using namespace tiny;
+
 // Forward declarations of functions included in this code module:
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
 
@@ -58,7 +57,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 TinyEngineApp::TinyEngineApp()
 {
-	Vector2 v(1, 2);
 	m_pTinyEngine = new TinyEngine();
 }
 

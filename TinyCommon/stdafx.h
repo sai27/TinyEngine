@@ -9,6 +9,7 @@
 #define __STDAFX_H__
 
 #include <string>
-#include "common.h"
+#include "cmn_inc.h"
 #include "defines_func.h"
+
 #endif

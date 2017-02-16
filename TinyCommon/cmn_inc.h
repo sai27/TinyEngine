@@ -6,9 +6,10 @@
 // *********************************************************************
 
 #ifndef __COMMON_H__
-#define __COMMON_H__
+#define __TINYCOMMON_H__
 
 #include "platform.h"
 #include "defines.h"
-#include "Vector2.h"
+#include "declare.h"
+
 #endif

@@ -1,12 +1,12 @@
-#ifndef __VECTOR2_H__
-#define __VECTOR2_H__
-
 // *********************************************************************
 // Name: Vector2.h
 // Date: 2017/02/17 03:27:28
 // Author: YuJingbo
 // Description:
 // *********************************************************************
+
+#ifndef __VECTOR2_H__
+#define __VECTOR2_H__
 
 __TE_SPACE_BEGIN__
 
@@ -25,12 +25,7 @@ public:
 public:
 	union
 	{
-		struct  
-		{
-			float x;
-			float y;
-		};
-		
+		struct { float x; float y; };
 		float raw[2];
 	};
 };
