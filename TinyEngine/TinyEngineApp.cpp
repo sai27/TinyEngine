@@ -90,8 +90,8 @@ bool TinyEngineApp::Init(HINSTANCE hInstance)
 
 	m_hInstance = hInstance; // Store instance handle in our global variable
 
-	const int createWidth = 800;
-	const int createHeight = 600;
+	const int createWidth = 1024;
+	const int createHeight = 768;
 
 	m_hWnd = CreateWindow(L"TinyEngine Window Class", L"TinyEngineApp", WS_OVERLAPPEDWINDOW,
 		CW_USEDEFAULT, 0, createWidth, createHeight, NULL, NULL, hInstance, NULL);

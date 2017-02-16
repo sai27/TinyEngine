@@ -143,6 +143,11 @@ void TinyEngine::Destroy()
 	if (m_pd3dDevice) m_pd3dDevice->Release();
 }
 
+void TinyEngine::Update(float _dt)
+{
+
+}
+
 void TinyEngine::Render()
 {
 	m_pImmediateContext->ClearRenderTargetView(m_pRenderTargetView, Colors::MidnightBlue);

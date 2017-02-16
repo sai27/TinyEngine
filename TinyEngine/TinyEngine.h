@@ -11,6 +11,7 @@ public:
 	bool Initilize(HWND hWnd);
 	void Destroy();
 
+	void Update(float _dt);
 	void Render();
 
 private:
