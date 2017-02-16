@@ -1,13 +1,16 @@
 // *********************************************************************
 // Name: SoftRenderApp.h
-// Date: 2017/02/12 04:12
-// Author: sai27
+// Date: 2017/02/12 04:12:28
+// Author: YuJingbo
 // Description:
 // *********************************************************************
+
 #include "stdafx.h"
 #include "TinyEngine.h"
 #include "TinyEngineApp.h"
+#include "Vector2.h"
 
+using namespace tiny;
 // Forward declarations of functions included in this code module:
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
 
@@ -55,6 +58,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 TinyEngineApp::TinyEngineApp()
 {
+	Vector2 v(1, 2);
 	m_pTinyEngine = new TinyEngine();
 }
 
@@ -171,4 +175,3 @@ bool TinyEngineApp::Update()
 	m_pTinyEngine->Render();
 	return true;
 }
-

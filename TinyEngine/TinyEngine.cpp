@@ -1,7 +1,16 @@
+// *********************************************************************
+// Name: TinyEngine
+// Date: 2017/02/17 03:22:52
+// Author: YuJingbo
+// Description:
+// *********************************************************************
+
 #include "stdafx.h"
 #include "TinyEngine.h"
 
 using namespace DirectX;
+
+__TE_SPACE_BEGIN__
 
 TinyEngine::TinyEngine()
 {
@@ -153,3 +162,5 @@ void TinyEngine::Render()
 	m_pImmediateContext->ClearRenderTargetView(m_pRenderTargetView, Colors::MidnightBlue);
 	m_pSwapChain->Present(0, 0);
 }
+
+__TE_SPACE_END__
