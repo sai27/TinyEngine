@@ -171,6 +171,7 @@ void TinyEngineApp::Run()
 bool TinyEngineApp::Update()
 {
 	m_pTinyEngine->Render();
+
 	return true;
 }
 

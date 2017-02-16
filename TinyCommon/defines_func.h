@@ -9,6 +9,6 @@
 #define __COMMON_FUNC_H__
 
 #define SafeDelete(v)	if(v != nullptr) { delete v; v = nullptr; }
-#define ZeroMemory(dest, length)	if(dest != nullptr) { memset(dest, 0, length); }
+#define SafeRelease(v)	if(v != nullptr) { v->Release(); v = nullptr; }
 
 #endif

@@ -10,6 +10,5 @@
 
 #include <string>
 #include "cmn_inc.h"
-#include "defines_func.h"
 
 #endif

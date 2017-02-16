@@ -20,14 +20,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="App">
       <UniqueIdentifier>{e8a2af58-d6bf-4078-a875-915a1c1e8a0c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
       <UniqueIdentifier>{dbcb801e-89d6-495c-ad62-943a43e6fa62}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
 </Project>

@@ -12,7 +12,8 @@ __TE_SPACE_BEGIN__
 
 Vector2::Vector2()
 {
-	ZeroMemory(raw, sizeof(raw));
+	this->x = 0.f;
+	this->y = 0.f;
 }
 
 Vector2::Vector2(float x, float y)

@@ -147,10 +147,10 @@ bool TinyEngine::Initilize(HWND hWnd)
 void TinyEngine::Destroy()
 {
 	if (m_pImmediateContext) m_pImmediateContext->ClearState();
-	if (m_pRenderTargetView) m_pRenderTargetView->Release();
-	if (m_pSwapChain) m_pSwapChain->Release();
-	if (m_pImmediateContext) m_pImmediateContext->Release();
-	if (m_pd3dDevice) m_pd3dDevice->Release();
+	SafeRelease(m_pRenderTargetView);
+	SafeRelease(m_pSwapChain);
+	SafeRelease(m_pImmediateContext);
+	SafeRelease(m_pd3dDevice);
 }
 
 void TinyEngine::Update(float _dt)

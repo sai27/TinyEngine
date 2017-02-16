@@ -11,5 +11,6 @@
 #include "platform.h"
 #include "defines.h"
 #include "declare.h"
+#include "defines_func.h"
 
 #endif

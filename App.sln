@@ -11,6 +11,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "app", "App\app.vcxproj", "{
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiny_engine", "TinyEngine\tiny_engine.vcxproj", "{426FCA01-03B1-4702-8909-A8349DD422EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6C32AC6-5564-48CA-AB13-C8F31DEF7DBB} = {A6C32AC6-5564-48CA-AB13-C8F31DEF7DBB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
