@@ -6,3 +6,6 @@
 /.vs
 /ipch
 /TinyEngine/app.vcxproj.user
+/*.opendb
+/*.db
+/App/app.vcxproj.user
