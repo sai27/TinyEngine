@@ -23,3 +23,5 @@
 #include <atlstr.h>
 
 // TODO: reference additional headers your program requires here
+#include <d3d11.h>
+#include <directxcolors.h>

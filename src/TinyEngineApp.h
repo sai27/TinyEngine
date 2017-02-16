@@ -7,6 +7,8 @@
 #ifndef __SOFTRENDERAPP_H__
 #define __SOFTRENDERAPP_H__
 
+class TinyEngine;
+
 class TinyEngineApp
 {
 public:
@@ -21,6 +23,7 @@ public:
 private:
 	HINSTANCE	m_hInstance;
 	HWND		m_hWnd;
+	TinyEngine*	m_pTinyEngine;
 };
 
 #endif

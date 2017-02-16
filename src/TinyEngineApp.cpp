@@ -5,12 +5,11 @@
 // Description:
 // *********************************************************************
 #include "stdafx.h"
+#include "TinyEngine.h"
 #include "TinyEngineApp.h"
 
 // Forward declarations of functions included in this code module:
-
 LRESULT CALLBACK	WndProc(HWND, UINT, WPARAM, LPARAM);
-INT_PTR CALLBACK	About(HWND, UINT, WPARAM, LPARAM);
 
 //
 //  FUNCTION: WndProc(HWND, UINT, WPARAM, LPARAM)
@@ -56,12 +55,16 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 TinyEngineApp::TinyEngineApp()
 {
-
+	m_pTinyEngine = new TinyEngine();
 }
 
 TinyEngineApp::~TinyEngineApp()
 {
-
+	if (m_pTinyEngine)
+	{
+		delete m_pTinyEngine;
+		m_pTinyEngine = nullptr;
+	}
 }
 
 bool TinyEngineApp::Init(HINSTANCE hInstance)
@@ -116,12 +119,14 @@ bool TinyEngineApp::Init(HINSTANCE hInstance)
 	SetFocus(m_hWnd);
 	SetForegroundWindow(m_hWnd);
 
+	m_pTinyEngine->Initilize(m_hWnd);
+
 	return true;
 }
 
 void TinyEngineApp::Destroy()
 {
-	 
+	m_pTinyEngine->Destroy();
 }
 
 void TinyEngineApp::Run()
@@ -163,6 +168,7 @@ void TinyEngineApp::Run()
 
 bool TinyEngineApp::Update()
 {
+	m_pTinyEngine->Render();
 	return true;
 }
 
