@@ -16,10 +16,16 @@ Vector2::Vector2()
 	this->y = 0.f;
 }
 
-Vector2::Vector2(float x, float y)
+Vector2::Vector2(const float x, const float y)
 {
 	this->x = x;
 	this->y = y;
+}
+
+Vector2::Vector2(const Vector2& v)
+{
+	this->x = v.x;
+	this->y = v.y;
 }
 
 Vector2::~Vector2()
@@ -43,6 +49,13 @@ void Vector2::Normalize()
 	float len = Length();
 	x = x / len;
 	y = y / len;
+}
+
+Vector2& Vector2::operator=(const Vector2 v)
+{
+	this->x = v.x;
+	this->y = v.y;
+	return *this;
 }
 
 __TE_SPACE_END__

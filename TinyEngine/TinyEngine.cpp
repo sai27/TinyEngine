@@ -15,6 +15,8 @@ __TE_SPACE_BEGIN__
 
 TinyEngine::TinyEngine()
 {
+	Vector3 v(1, 1, 1);
+	v = v / 0.5f;
 	m_hWnd				= nullptr;
 	m_driverType		= D3D_DRIVER_TYPE_NULL;
 	m_featureLevel		= D3D_FEATURE_LEVEL_11_0;
